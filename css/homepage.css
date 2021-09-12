@@ -1,0 +1,101 @@
+﻿body {
+    background: url('../images/Welcome.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #174a2d;
+    margin: 2em;
+    animation: blink 3s ease-out infinite;
+    transition: 0.3s ease-in-out;
+}
+
+    h1 a:hover {
+        color: #ebcc4b;
+        text-shadow: 2px 2px 4px black;
+    }
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 9999;
+    transition: 0.3s;
+    transform: scale(1);
+    backdrop-filter: blur(2px);
+}
+
+.popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    margin: 0 auto;
+    height: 25rem;
+    transform: translate(-50%, -50%);
+    padding: 1.6rem;
+    display: table;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.popup__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    .popup__close:hover {
+        background-color: #ebcc4b;
+    }
+
+    .popup__close svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+.content {
+    transform: translateY(45%);
+    text-align: center;
+}
+
+    .content h1 {
+        font-size: 3em;
+        text-shadow: 1px 1px 1px black;
+        color: #ebcc4b;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+.hide__popup {
+    transform: scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

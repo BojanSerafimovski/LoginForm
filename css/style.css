@@ -1,0 +1,160 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaisei Decol', serif;
+}
+
+body {
+    background: url('../images/background.jpeg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    box-shadow: 2px 2px 20px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: rgb(255,255,255);
+}
+
+    .center h1 {
+        text-align: center;
+        padding: 0 0 20px 0;
+        margin: 10px;
+        border-bottom: 2px solid #ebcc4b;
+    }
+
+    .center .form {
+        padding: 0 40px;
+    }
+
+.form .text_field {
+    position: relative;
+    margin: 30px 0;
+}
+
+    .form .text_field input {
+        width: 100%;
+        height: 40px;
+        background: #c5c5c5;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }
+
+.form .info {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgba(0,0,0,0.6);
+    transform: translateY(-50%);
+    font-size: 25px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+    .form .info i {
+        color: rgba(0,0,0,0.5);
+        font-size: 25px;
+        transform: translateY(-8%);
+        margin-right: 10px;
+    }
+
+.form .animation::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #174a2d;
+    transition: 0.5s ease;
+}
+
+.form .text_field input:focus ~ .info,
+.form .text_field input:valid ~ .info {
+    top: -12px;
+    color: #174a2d;
+}
+
+.form .text_field input:focus ~ .animation::before,
+.form .text_field input:valid ~ .animation::before {
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#Btn_login, #Btn_register {
+    width: 50%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: rgba(235,204,75,0.9);
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.5s ease;
+    color: #fff;
+    font-weight: 900;
+    color: #174a2d;
+}
+
+    #Btn_login:hover, #Btn_register:hover {
+        width: 55%;
+        box-shadow: 0.5px 0.5px 5px rgba(0,0,0,0.4);
+    }
+
+.register {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+    .register a {
+        font-size: 20px;
+        color: #174a2d;
+        text-decoration: none;
+    }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+
+#Label1 {
+    color: darkred;
+    position: absolute;
+    bottom: 37%;
+    right: 15%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#validator_email,
+#validator_registration {
+    color: darkred;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 110%;
+}
+
+#Label_registration {
+    color: #3f8a36;
+    text-shadow: 0.5px 1px 0.5px black;
+    position: absolute;
+    bottom: 37%;
+    right: 25%;
+    text-align: center;
+    font-size: 25px;
+}
