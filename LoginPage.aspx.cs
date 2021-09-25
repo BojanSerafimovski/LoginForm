@@ -15,7 +15,15 @@ namespace LoginPage
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SqlConnectionString"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // displaying the values that the cookies remembered
+            if (!IsPostBack)
+            {
+                if (Request.Cookies["Email"] != null && Request.Cookies["Password"] != null)
+                {
+                    txt_username.Text = Request.Cookies["Email"].Value;
+                    txt_password.Attributes["value"] = Request.Cookies["Password"].Value;
+                }
+            }
         }
 
         protected void Btn_login_Click(object sender, EventArgs e)
@@ -29,6 +37,21 @@ namespace LoginPage
             con.Close();
             if (temp == 1)
             {
+                // enabling the cookies to remember the username and the password for 1 minute if the checkbox is checked
+                if (checkbox.Checked)
+                {
+                    Response.Cookies["Email"].Value = txt_username.Text;
+                    Response.Cookies["Password"].Value = txt_password.Text;
+
+                    Response.Cookies["Email"].Expires = DateTime.Now.AddMinutes(1);
+                    Response.Cookies["Password"].Expires = DateTime.Now.AddMinutes(1);
+                }
+                else
+                {
+                    Response.Cookies["Email"].Expires = DateTime.Now.AddMinutes(-1);
+                    Response.Cookies["Password"].Expires = DateTime.Now.AddMinutes(-1);
+                }
+
                 Response.Redirect("HomePage.aspx");
             }
             else

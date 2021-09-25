@@ -51,6 +51,15 @@ namespace LoginPage
         protected global::System.Web.UI.WebControls.TextBox txt_password;
 
         /// <summary>
+        /// checkbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkbox;
+
+        /// <summary>
         /// Btn_login control.
         /// </summary>
         /// <remarks>

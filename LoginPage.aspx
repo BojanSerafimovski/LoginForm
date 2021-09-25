@@ -26,6 +26,10 @@
                     <span class="animation"></span>
                     <span class="info"><i class="fas fa-lock"></i>Password</span>
                 </div>
+                <div class="remember">
+                    Remember Me
+                    <asp:CheckBox ID="checkbox" runat="server" />
+                </div>
                 <div class="button">
                     <asp:Button ID="Btn_login" runat="server" Text="Login" OnClick="Btn_login_Click" />
                     <asp:Label ID="Label1" runat="server"></asp:Label>
