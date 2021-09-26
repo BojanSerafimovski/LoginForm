@@ -32,7 +32,7 @@ namespace LoginPage
 
                 Label_registration.Text = "Registration Successful!";
             }
-            catch
+            catch (Exception)
             {
                 Label_registration.Text = "You can't registrate at the moment, please try again later.";
             }
