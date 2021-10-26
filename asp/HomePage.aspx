@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Home Page</title>
-    <link href="css/homepage.css" rel="stylesheet" />
+    <link href="../css/homepage.css" rel="stylesheet" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
@@ -17,7 +17,7 @@
   <div class="popup__content">
     <div class="popup__close">
       <svg>
-        <use xlink:href="images/sprite.svg#icon-cross"></use>
+        <use xlink:href="../images/sprite.svg#icon-cross"></use>
       </svg>
     </div>
       <div class="content">
@@ -32,6 +32,6 @@
 
     </form>
 
-  <script src="js/popup.js"></script>
+  <script src="../js/popup.js"></script>
 </body>
 </html>

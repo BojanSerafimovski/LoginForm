@@ -69,36 +69,36 @@
   <ItemGroup>
     <Content Include="css\homepage.css" />
     <Content Include="css\style.css" />
-    <Content Include="HomePage.aspx" />
+    <Content Include="asp\HomePage.aspx" />
     <Content Include="images\background.jpeg" />
     <Content Include="images\sprite.svg" />
     <Content Include="images\Welcome.jpg" />
     <Content Include="js\popup.js" />
-    <Content Include="LoginPage.aspx" />
-    <Content Include="RegisterPage.aspx" />
+    <Content Include="asp\LoginPage.aspx" />
+    <Content Include="asp\RegisterPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomePage.aspx.cs">
+    <Compile Include="asp\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
+    <Compile Include="asp\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.aspx.cs">
+    <Compile Include="asp\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoginPage.aspx.designer.cs">
+    <Compile Include="asp\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterPage.aspx.cs">
+    <Compile Include="asp\RegisterPage.aspx.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegisterPage.aspx.designer.cs">
+    <Compile Include="asp\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
