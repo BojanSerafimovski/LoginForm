@@ -52,6 +52,9 @@ namespace LoginPage
                     Response.Cookies["Password"].Expires = DateTime.Now.AddMinutes(-1);
                 }
 
+                //remember the username in session
+                Session["Username"] = txt_username.Text;
+
                 Response.Redirect("HomePage.aspx");
             }
             else

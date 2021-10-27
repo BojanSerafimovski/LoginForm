@@ -70,12 +70,13 @@ h1 a {
     }
 
 .content {
-    transform: translateY(45%);
+    transform: translateY(15%);
     text-align: center;
+    margin: 1em;
 }
 
     .content h1 {
-        font-size: 3em;
+        font-size: 2.6em;
         text-shadow: 1px 1px 1px black;
         color: #ebcc4b;
     }
