@@ -26,6 +26,10 @@
                     <span class="animation"></span>
                     <span class="info"><i class="fas fa-lock"></i>Password</span>
                 </div>
+                <div class="forgot">
+                    <a href="#" onclick="window.open('ForgetPassword.aspx', 'FP', 'width=500, height=170, top=400, left=700, fullscreen=no, resizable=0');">Forgot Password?</a>
+                    <asp:Literal ID="literal_message" runat="server"></asp:Literal>
+                </div>
                 <div class="remember">
                     Remember Me
                     <asp:CheckBox ID="checkbox" runat="server" />

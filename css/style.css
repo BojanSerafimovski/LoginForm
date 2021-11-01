@@ -116,11 +116,26 @@ body {
         box-shadow: 0.5px 0.5px 5px rgba(0,0,0,0.4);
     }
 
-.remember {
-    margin: 10px 0px;
-    text-align: center;
-    font-size: 20px;
+.forgot{
+    transform: translateY(-20px);
+    height: 10px;
 }
+
+.forgot a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #174a2d;
+}
+    .forgot a:hover{
+        text-decoration: underline;
+    }
+
+
+    .remember {
+        margin: 10px 0px;
+        text-align: center;
+        font-size: 20px;
+    }
 
 #checkbox {
     fill: black;
